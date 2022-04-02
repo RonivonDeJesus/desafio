@@ -19,7 +19,7 @@ class UploadImageService{
             return res.json('Classificação não suportada')
         } else {
             await jimp(file.location).then(result =>{
-                if (result == null || result == false){
+                if (result == null || resultprocess.env.BUCKET == false){
                     this.removeImage(file.originalname)
                     return res.json("Essa imagem já foi salva") 
                 } 
@@ -36,7 +36,7 @@ class UploadImageService{
     removeImage(file){
         const s3 = new AWS.S3()
         s3.deleteObject({
-            Bucket: 'roni-desafio',
+            Bucket: process.env.BUCKET,
             Key: file.originalname
         })
     }
