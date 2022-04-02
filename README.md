@@ -1,7 +1,7 @@
-Essa API foi construida no intuito de permitir que o cliente envie fotos categorizadas. N„o permitindo que sejam enviadas 
-fotos iguais, mesmo sendo em categorias diferentes. No mometno È permitido a inserÁ„o das seguintes categorias: "animal", "pessoa", 
+Essa API foi construida no intuito de permitir que o cliente envie fotos categorizadas. N√£o permitindo que sejam enviadas 
+fotos iguais, mesmo sendo em categorias diferentes. No mometno √© permitido a inser√ß√£o das seguintes categorias: "animal", "pessoa", 
 "paisagem", "objeto". 
-As imagens s„o inseridas utilizando a o tipo de conte˙do multipart/form. 
+As imagens s√£o inseridas utilizando a o tipo de conte√∫do multipart/form. 
 
 Foram utilizadas os seguintes frameworks no desenvolvimento dessa API: 
 
@@ -13,7 +13,9 @@ Foram utilizadas os seguintes frameworks no desenvolvimento dessa API:
  -mongoose
  -multer-s3
  -nodemon
+ 
+No momento toda a APi est√° no localhost, sendo assim √© preciso adicionar as credenciais do seu db e da AWS.  
 
-A API permite que seja adicionado no formato multipart/form, uma imagem que ser· enviada para o repositÛrio da amazon(S3), adicionando 
-tambÈm a categoria a que essa imagem pertence. No momento apenas È permitido o envio de imagens, o consulta vir· em umas das possÌveis 
-atualizaÁıes dessa API. 
+A API permite que seja adicionado no formato multipart/form, uma imagem que ser√° enviada para o reposit√≥rio da amazon(S3), adicionando 
+tamb√©m a categoria a que essa imagem pertence. No momento apenas √© permitido o envio de imagens, o consulta vir√° em umas das poss√≠veis 
+atualiza√ß√µes dessa API. 
